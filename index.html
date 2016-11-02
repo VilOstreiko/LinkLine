@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>QB</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
 </head>
 <body>
 
@@ -27,20 +30,124 @@
 <!--</div>-->
 <!--</header>-->
 
-<header class="page-header">
-    <div class="page-header__wrap container">
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Press Kit</a></li>
-                <li><a href="#" class="page-header__logo"><img src="img/IO%201.png" width="57" height="57" alt="QB Logo"></a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="page-header__button">How to get</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 
+<!--HEADER BEGINS-->
+
+
+<!--<header class="page-header">-->
+<!--<div class="page-header__wrap container">-->
+<!--<nav class="main-nav">-->
+<!--<ul class="main-nav__list">-->
+<!--<li><a href="#">Products</a></li>-->
+<!--<li><a href="#">Press Kit</a></li>-->
+<!--<li><a href="#" class="page-header__logo"><img src="img/IO%201.png" width="57" height="57" alt="QB Logo"></a></li>-->
+<!--<li><a href="#">Contact</a></li>-->
+<!--<li><a href="#" class="page-header__button">How to get</a></li>-->
+<!--</ul>-->
+<!--</nav>-->
+<!--</div>-->
+<!--</header>-->
+
+
+<!--HEADER ENDS-->
+
+<!--SLIDES SECTION-->
+
+
+<div id="slides">
+
+    <!--HEADER -->
+
+    <header class="page-header">
+        <div class="page-header__wrap container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#" class="page-header__logo"><img src="img/IO%201.png" width="57" height="57"
+                                                                   alt="QB Logo"></a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="page-header__button">How to get</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--HEADER ENDS-->
+
+    <ul class="slides-container">
+        <li>
+            <img src="http://placehold.it/1920x1080" alt="">
+            <!--<img src="img/slider_bat.jpg" alt="Battery">-->
+            <!--<div class="container">-->
+            <!--Text content-->
+            <!--</div>-->
+        </li>
+        <li>
+            <!--<img src="img/slider_bat.jpg" alt="Battery">-->
+            <img src="http://placehold.it/1920x1080" alt="">
+        </li>
+        <li>
+            <!--<img src="img/slider_bat.jpg" alt="Battery">-->
+            <img src="http://placehold.it/1920x1080" alt="">
+        </li>
+    </ul>
+    <nav class="slides-navigation">
+        <a href="#" class="next"><img src="img/slider-button-next.png" width="56" height="94" alt="Next"></a>
+        <a href="#" class="prev"><img src="img/slider-button-prev.png" width="56" height="94" alt="Prev"></a>
+    </nav>
+</div>
+
+<!--SLIDES SECTION ENDS-->
+
+
+<!--VIDEO SECTION -->
+
+
+<section class="video-section">
+    <div class="container">
+        <div class="video-section__content">
+            <a href="#modal" class="video-section__play">
+                <img src="img/video-play-btn.png" width="380" height="302" alt="Play">
+            </a>
+            <span>Watch the video.</span>
+        </div>
+    </div>
+</section>
+
+<!--VIDEO SECTION ENDS-->
+
+
+<!--MODAL WINDOW-->
+
+
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <!--<h1>Remodal</h1>-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yawjc4Pg7x8" frameborder="0"
+            allowfullscreen></iframe>
+    <!--<p>-->
+    <!--Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with-->
+    <!--declarative configuration and hash tracking.-->
+    <!--</p>-->
+</div>
+
+
+<!--MODAL WINDOW ENDS-->
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/remodal.min.js"></script>
+<script>
+    $(function () {
+        $('#slides').superslides({
+            hashchange: false,
+            play: 5000
+        });
+
+    });
+</script>
 
 </body>
 </html>
